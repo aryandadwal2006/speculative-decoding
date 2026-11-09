@@ -11,6 +11,4 @@ A minimal greedy tree-speculative decoding implementation for compatible PyTorch
 - Tree decoding currently recomputes contexts and does not yet integrate the KV cache or scheduler.
 - Models must support 4D additive attention masks and explicit `position_ids`.
 
-Install with `pip install -e .` or `pip install -e '.[triton]'` for the optional kernel.
-
-Run `python examples/generate.py --target MODEL --draft MODEL --prompt 'Hello'`.
+Install with `pip install -e .` or `pip install -e '.[triton]'`; run `python examples/generate.py --target MODEL --draft MODEL --prompt 'Hello'`.
